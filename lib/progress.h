@@ -1,6 +1,7 @@
 #ifndef PROGRESS_H
 #define PROGRESS_H
 #include <functional>
+#include <cstdint>
 
 class Progress
 {

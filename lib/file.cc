@@ -1,5 +1,6 @@
 #include <cstdio>
 #include "file.h"
+#include <stdexcept>
 
 std::unique_ptr<File> File::fromFileHandle(FILE *fileHandle)
 {

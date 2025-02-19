@@ -1,4 +1,5 @@
 #include "progress.h"
+#include <cstdint>
 
 void Progress::start(uint64_t max)
 {
