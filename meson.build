@@ -14,7 +14,7 @@ ldflags = []
 output = '?'
 r = run_command('git', 'describe', '--always', '--dirty', '--long', '--tags')
 if r.returncode() == 0
-    output = r.stdout().split('-')[0]
+    output = r.stdout().strip().split('-')[0]
 endif
 conf.set_quoted('CRCMANIP_VERSION', output)
 
