@@ -6,7 +6,7 @@ lib_src = files(
     'util.cc'
 )
 
-crcmanip = library(
+crcmanip = static_library(
     'crcmanip',
     sources: [lib_src, config_h],
     install: true,
